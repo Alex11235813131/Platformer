@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CoinCollection : MonoBehaviour
+public class CoinCollector : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {

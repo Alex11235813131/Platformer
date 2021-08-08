@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GameOver : MonoBehaviour
+public class EnemyHitChecker : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
