@@ -1,10 +1,10 @@
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer), typeof(Rigidbody2D))]
-public class Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float _speed;
-    private float _jumpSpeed = 15;
+    private float _jumpForce = 15;
     private SpriteRenderer _playerDirection;
     private Rigidbody2D _rigidbody;
 
@@ -30,7 +30,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {           
-            _rigidbody.AddForce(new Vector2(0, _jumpSpeed));
+            _rigidbody.AddForce(new Vector2(0, _jumpForce));
         }
     }
 }
